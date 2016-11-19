@@ -33,7 +33,9 @@ The images the Flatigram app processes are going to need to store more informati
 
 Create a new `.swift` file to contain the new `Flatigram` class.
 
-This class should have two properties: an `image` of type `UIImage?` and a `state` of type `ImageState`. Setting `image` to be an optional allows us to create an instance of `Flatigram` without having to worry about whether we have an image ready.
+This class should have two properties: an variable `image` of type `UIImage?` and a variable `state` of type `ImageState`. Setting `image` to be an optional allows us to create an instance of `Flatigram` without having to worry about whether we have an image ready. 
+
+If the compliler complains about an undeclared type of UIImage, import UIKit.
 
 `ImageState` is an enumeration that doesn't yet exist. Create an enum with two cases: `filtered` and `unfiltered`. Since any new `Flatigram` we create won't have been filtered yet, go back to the `Flatigram` class and set the default value of `state` to `unfiltered`.
 
@@ -236,3 +238,5 @@ func startProcess() {
 
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/swift-multithreading-lab' title='Multithreading in Swift'>Multithreading in Swift</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/swift-multithreading-lab'>Swift Multithreading Lab</a> on Learn.co and start learning to code for free.</p>
